@@ -32,19 +32,25 @@ const Header = () => {
         <div className="mt-16 overflow-hidden">
           <div className="flex gap-8 animate-scroll">
             {[
-              "https://plus.unsplash.com/premium_photo-1673590981774-d9f534e0c617?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRpc2h8ZW58MHx8MHx8fDA%3D",
-              "https://plus.unsplash.com/premium_photo-1661771822467-e516ca075314?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlzaHxlbnwwfHwwfHx8MA%3D%3D",
-              "https://images.unsplash.com/photo-1517244683847-7456b63c5969?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlzaHxlbnwwfHwwfHx8MA%3D%3D",
+              
+              
+              "https://media.istockphoto.com/id/1293479617/photo/woman-hands-eating-vegan-salad-of-baked-vegetables-avocado-tofu-and-buckwheat-buddha-bowl-top.webp?a=1&b=1&s=612x612&w=0&k=20&c=rf958EjYC788RoUJ6o-CZCeFLxNIBJmH_7ai_SZAXtQ=",
+              "https://media.istockphoto.com/id/1173089065/photo/ilish-or-hilsa-famous-bengali-fish-curry-with-grinded-mustard-seed.jpg?s=612x612&w=0&k=20&c=l4qvTypy8_QHOVMXQlSN8LYYGTwxm3hRSy9Ji_jISqI=",
+              "https://media.istockphoto.com/id/1174567728/photo/ketogenic-diet-keto-brunch-boiled-egg-pork-steak-and-olives-cucumber-spinach-brie-cheese-nuts.jpg?s=612x612&w=0&k=20&c=f59X5n1LpERJm9y1QD4w4D2OagWs7K2IZC2j6ZVyKVQ=",
+              "https://media.istockphoto.com/id/1319648667/photo/crispy-pancake-made-of-fermented-whole-grain-finger-millet-batter-served-with-cottage-cheese.jpg?s=612x612&w=0&k=20&c=s_4w9jCAI6vLcQAE58bknLmbOnbxt4_1UJv9wduB3kM=",
+              "https://media.istockphoto.com/id/1350252553/photo/moong-dal-cheela.jpg?s=612x612&w=0&k=20&c=PDxn7f6hf5H66vttyodmQPKwKheURd4TA-W8nQh7b4I=",
+              "https://media.istockphoto.com/id/1309353866/photo/seer-fish-fry.jpg?s=612x612&w=0&k=20&c=18mD5mCErONAEQYmOz970ZfM1zE_CfMD96VPaHmNSfA=",
+
               // Add more image URLs here
             ].map((image, index) => (
               <div
                 key={index}
-                className="w-80 h-64 rounded-lg overflow-hidden shadow-lg"
+                className="w-full  sm:w-80 h-56 sm:h-64 rounded-lg overflow-hidden shadow-lg"
               >
                 <img
                   src={image}
                   alt={`Marquee ${index}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full sm:w-full object-cover"
                 />
               </div>
             ))}

@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         move: 'move 5s infinite 1s',
+        scroll: "scroll 30s linear infinite",
       },
       keyframes: {
         move: {
@@ -16,6 +17,10 @@ export default {
           '40%': { top: '-100px' },
           '60%': { top: '-150px' },
           '80%': { top: '-200px' },
+        },
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         
       },

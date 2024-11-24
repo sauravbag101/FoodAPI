@@ -36,7 +36,7 @@ const MealData = () => {
         <div className="max-w-4xl bg-white shadow-lg rounded-lg p-6 w-full sm:w-11/12 md:w-10/12 lg:w-8/12">
           {/* Meal Title and Image */}
           <div className="text-center">
-            <h1 className="text-2xl md:text-3xl font-semibold text-gray-800">{info.strMeal}</h1>
+            <h1 className="text-2xl md:text-3xl font-semibold font-sans text-gray-800">{info.strMeal}</h1>
             <img
               src={info.strMealThumb}
               alt={info.strMeal}
@@ -76,10 +76,10 @@ const MealData = () => {
 
           {/* Category and Area */}
           <div className="mt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-lg">
+            <span className="bg-red-500 text-white text-sm font-medium px-4 py-2 rounded-lg">
               Category: {info.strCategory}
             </span>
-            <span className="bg-green-100 text-green-800 text-sm font-medium px-4 py-2 rounded-lg">
+            <span className="bg-green-700 text-white text-sm font-medium px-4 py-2 rounded-lg">
               Area: {info.strArea}
             </span>
           </div>
@@ -103,9 +103,9 @@ const MealData = () => {
                 href={info.strYoutube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 bg-red-500 text-white text-sm font-medium px-6 py-2 rounded-lg shadow hover:bg-red-600 transition"
+                className="inline-block mt-4 border-4 border-red-500/100 text-black border-3 text-sm font-medium px-6 py-2 rounded-lg shadow "
               >
-                Watch Recipe on YouTube
+                Watch on YouTube
               </a>
             </div>
           )}

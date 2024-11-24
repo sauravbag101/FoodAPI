@@ -41,7 +41,7 @@ import { NavLink } from 'react-router-dom';
 
 const Meals = ({ detail }) => {
   return (
-    <div className="flex flex-wrap gap-5  w-[90%] mx-auto mt-11">
+    <div className="flex flex-wrap gap-8 justify-center  w-[90%] mx-auto mt-11">
       {!detail || detail.length === 0 ? (
       <div className="w-full flex items-center justify-center p-4">
       {/* Uncomment below if needed */}
@@ -59,21 +59,22 @@ const Meals = ({ detail }) => {
       ) : (
         detail.map((curItem) => (
           <div
-            key={curItem.idMeal}
-            className="w-[250px] h-[350px] text-center bg-white shadow-md rounded-b-lg"
-          >
-            <img
-              src={curItem.strMealThumb}
-              alt={curItem.strMeal}
-              className="w-full h-[270px] rounded-t-lg"
-            />
-            <p className="font-semibold mt-2">{curItem.strMeal}</p>
-            <NavLink to={`/${curItem.idMeal}`}>
-              <button className="mt-3 w-full bg-red-600 text-white text-sm rounded-full py-3 cursor-pointer hover:bg-orange-600">
-                Recipe
-              </button>
-            </NavLink>
-          </div>
+          key={curItem.idMeal}
+          className="w-full max-w-[250px] h-auto text-center bg-white shadow-md rounded-b-lg mx-auto sm:mx-0">
+          
+  <img
+    src={curItem.strMealThumb}
+    alt={curItem.strMeal}
+    className="w-full h-[200px] sm:h-[250px] rounded-t-lg object-cover"
+  />
+  <p className="font-semibold mt-2 text-sm sm:text-base">{curItem.strMeal}</p>
+  <NavLink to={`/${curItem.idMeal}`}>
+    <button className="mt-3 w-full bg-red-600 text-white text-xs sm:text-sm rounded-full py-2 sm:py-3 cursor-pointer hover:bg-orange-600 transition">
+      Recipe
+    </button>
+  </NavLink>
+</div>
+
         ))
       )}
     </div>
